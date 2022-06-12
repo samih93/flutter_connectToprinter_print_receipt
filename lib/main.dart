@@ -151,7 +151,12 @@ class _MyAppState extends State<MyApp> {
             align: PosAlign.center,
           )),
       PosColumn(text: "1", width: 2, styles: PosStyles(align: PosAlign.center)),
-      PosColumn(text: "30", width: 2, styles: PosStyles(align: PosAlign.right)),
+      PosColumn(
+          text: "30",
+          width: 2,
+          styles: PosStyles(
+            align: PosAlign.right,
+          )),
     ]);
 
     bytes += generator.row([
@@ -193,7 +198,7 @@ class _MyAppState extends State<MyApp> {
     bytes += generator.row([
       PosColumn(
           text: 'TOTAL',
-          width: 6,
+          width: 4,
           styles: PosStyles(
             align: PosAlign.left,
             height: PosTextSize.size2,
@@ -201,11 +206,11 @@ class _MyAppState extends State<MyApp> {
           )),
       PosColumn(
           text: "160 LL",
-          width: 6,
+          width: 8,
           styles: PosStyles(
             align: PosAlign.right,
             height: PosTextSize.size2,
-            width: PosTextSize.size2,
+            width: PosTextSize.size1,
           )),
     ]);
 
@@ -215,7 +220,7 @@ class _MyAppState extends State<MyApp> {
     bytes += generator.text('Thank you!',
         styles: PosStyles(align: PosAlign.center, bold: true));
 
-    bytes += generator.text("${DateTime.now()}",
+    bytes += generator.text("${DateTime.now().toString().split('.').first}",
         styles: PosStyles(align: PosAlign.center), linesAfter: 1);
 
     bytes += generator.text(
