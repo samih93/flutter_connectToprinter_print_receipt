@@ -196,16 +196,16 @@ class _MyAppState extends State<MyApp> {
           width: 6,
           styles: PosStyles(
             align: PosAlign.left,
-            height: PosTextSize.size4,
-            width: PosTextSize.size4,
+            height: PosTextSize.size2,
+            width: PosTextSize.size2,
           )),
       PosColumn(
           text: "160 LL",
           width: 6,
           styles: PosStyles(
             align: PosAlign.right,
-            height: PosTextSize.size4,
-            width: PosTextSize.size4,
+            height: PosTextSize.size2,
+            width: PosTextSize.size2,
           )),
     ]);
 
